@@ -13,7 +13,7 @@ Install QT (with [homebrew](https://github.com/mxcl/homebrew))
 
 ##Configuration
 
-Added to the Gemfile:
+Added to your Gemfile:
 
     group :test, :development do
       gem 'jasmine'
