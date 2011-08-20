@@ -28,7 +28,7 @@ Once you've cloned this repository and changed into the directory, you can run t
     bundle install
     bundle exec jasmine-headless-webkit -c --keep
 
-If you run guard, it'll run any specs and it'll monitor any changes to your assets or specs and notify the terminal & growl.
+If you run guard, it first run your specs and then monitor any changes to your assets or specs and notify the terminal & growl.
 
     bundle exec guard
 
