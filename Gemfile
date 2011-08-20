@@ -19,6 +19,17 @@ end
 
 gem 'jquery-rails'
 
+group :test, :development do
+  gem 'jasmine'
+  gem 'jasmine-headless-webkit'
+  gem 'guard-rails-assets'
+  gem 'guard-jasmine-headless-webkit'
+  if RUBY_PLATFORM =~ /darwin/i
+    gem 'growl_notify'
+    gem 'rb-fsevent', :require => false
+  end
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -27,8 +38,3 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug'
-
-group :test, :development do
-  gem 'jasmine'
-  gem 'jasmine-headless-webkit'
-end

@@ -47,6 +47,16 @@ GEM
     execjs (1.2.4)
       multi_json (~> 1.0)
     ffi (1.0.9)
+    growl_notify (0.0.1)
+      rb-appscript
+    guard (0.6.2)
+      thor (~> 0.14.6)
+    guard-jasmine-headless-webkit (0.2.0)
+      guard (>= 0.4.0)
+      jasmine-headless-webkit (>= 0.3.0)
+    guard-rails-assets (0.0.6)
+      guard
+      rake
     hike (1.2.1)
     i18n (0.6.0)
     jasmine (1.0.2.1)
@@ -98,6 +108,8 @@ GEM
       thor (~> 0.14.6)
     rainbow (1.1.1)
     rake (0.9.2)
+    rb-appscript (0.6.1)
+    rb-fsevent (0.4.3.1)
     rdoc (3.9.2)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
@@ -138,11 +150,15 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.0.rc)
+  growl_notify
+  guard-jasmine-headless-webkit
+  guard-rails-assets
   jasmine
   jasmine-headless-webkit
   jquery-rails
   json
   rails (~> 3.1.0.rc)
+  rb-fsevent
   sass-rails (~> 3.1.0.rc)
   sqlite3
   uglifier
