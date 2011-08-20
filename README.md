@@ -12,9 +12,9 @@ Check this out if you want to:
 
 Stuff I did on my Mac OS X Lion (10.7) setup to get started. I already had XCode installed, which I'll bet is a requisite step.
 
-Install XCode
+Install [XCode](http://itunes.apple.com/us/app/xcode/id448457090?mt=12)
 
-Install QT with [homebrew](https://github.com/mxcl/homebrew). (Full disclosure: upon running `brew update`, I needed to `/usr/local` and `git stash` and `git pull` to get the latest recipes.)
+Install QT with [homebrew](https://github.com/mxcl/homebrew). (Full disclosure: upon running `brew update`, I needed to `git stash` in `/usr/local` then `git pull` to get the latest recipes.)
 
     brew update
     brew install qt
