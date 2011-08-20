@@ -5,8 +5,7 @@
 # It is recommended to make explicit list of assets in `config/application.rb`
 # config.assets.precompile = ['application.js', 'application.css', 'all-ie.css']
 guard 'rails-assets' do
-  watch(%r{^lib/assets/.+$})  
-  watch(%r{^app/assets/.+$})
+  watch(%r{^.*/assets/.+$})
   watch('config/application.rb')
 end
 
