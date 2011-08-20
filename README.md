@@ -33,11 +33,12 @@ If you run guard, it first run your specs and then monitor any changes to your a
     bundle exec guard
 
 
-##Replay
+##The play-by-play
 
 If you're looking to recreate a similar setup for your existing project, here are the steps I took.
 
-Added to your Gemfile:
+###Dependencies
+Added to your [Gemfile](https://github.com/searls/jasmine-headless-webkit-rails-skeleton/blob/master/Gemfile):
 
     group :test, :development do
       gem 'jasmine'
@@ -51,13 +52,14 @@ Added to your Gemfile:
       gem 'guard-jasmine-headless-webkit'
     end
     
+###Jasmine config
 Next, Run:
 
     jasmine init
 
 This will create a little structure, most importantly your `spec/javascripts/support/jasmine.yml` configuration file. You can safely remove `lib/tasks/jasmine.rake`, though.
 
-Then, update your jasmine.yml file to look for CoffeeScript in the assets directories. Mine looks something like this.
+Then, update your [jasmine.yml](https://github.com/searls/jasmine-headless-webkit-rails-skeleton/blob/master/spec/javascripts/support/jasmine.yml) file to look for CoffeeScript in the assets directories. [Mine](https://github.com/searls/jasmine-headless-webkit-rails-skeleton/blob/master/spec/javascripts/support/jasmine.yml) looks something like this.
 
     src_files:
       - "vendor/**/*.{js,coffee}"
@@ -70,3 +72,24 @@ Then, update your jasmine.yml file to look for CoffeeScript in the assets direct
     src_dir:
     spec_dir: spec/javascripts
 
+###Guard
+I set guard up by running
+
+    bundle exec guard init rails-assets
+    bundle exec jasmine-headless-webkit
+    
+And changed these lines in my [Guardfile](https://github.com/searls/jasmine-headless-webkit-rails-skeleton/blob/master/Guardfile) to monitor all of my assets directories (under `app`, `lib`, and `vendor`):
+
+    guard 'rails-assets' do
+      watch(%r{^*/assets/.+$})
+      ...
+    end
+
+    guard 'jasmine-headless-webkit' do
+      ...
+      watch(%r{^.*/assets/javascripts/(.*)\.(js|coffee)$}) { |m| newest_js_file(spec_location % m[1]) }
+      ...
+    end
+
+  
+  
