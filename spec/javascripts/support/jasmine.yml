@@ -14,7 +14,6 @@ src_files:
   - "vendor/**/*.{js,coffee}"
   - "lib/**/*.{js,coffee}"
   - "public/**/*.{js,coffee}"
-  #- "**/*.{js,coffee}"
 
 # stylesheets
 #
