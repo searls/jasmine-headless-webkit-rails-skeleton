@@ -11,7 +11,7 @@ Check this out if you want to:
 
 This was put together running Mac OS X Lion (10.7). I'm sure the details will differ slightly on other platforms.
 
-Install [XCode](http://itunes.apple.com/us/app/xcode/id448457090?mt=12) & [Growl](http://growl.info/index.php) for guard notifications.
+Install [XCode](http://itunes.apple.com/us/app/xcode/id448457090?mt=12) & [Growl](http://growl.info/index.php).
 
 Install QT with [homebrew](https://github.com/mxcl/homebrew). (Full disclosure: upon running `brew update`, I needed to `git stash` in `/usr/local` then `git pull` to get the latest recipes.)
 
