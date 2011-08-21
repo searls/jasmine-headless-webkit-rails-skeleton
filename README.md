@@ -9,7 +9,7 @@ Check this out if you want to:
 
 ##Prerequisites
 
-Running Mac OS X Lion (10.7) setup. I'm sure the details will differ slightly on other platforms.
+This was put together running Mac OS X Lion (10.7). I'm sure the details will differ slightly on other platforms.
 
 Install [XCode](http://itunes.apple.com/us/app/xcode/id448457090?mt=12) & [Growl](http://growl.info/index.php) for guard notifications.
 
