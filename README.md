@@ -23,19 +23,18 @@ Install QT with [homebrew](https://github.com/mxcl/homebrew). (Full disclosure: 
 Once you've cloned this repository and changed into the directory, you should be able to run the Jasmine specs like so:
 
     bundle install
-    bundle exec jasmine-headless-webkit -c --keep
-
-If you run guard, it first run your specs and then monitor any changes to your assets or specs and notify the terminal & growl.
-
     bundle exec guard
+
+When you run guard, it first compiles your assets, run your specs and then monitors for changes.
 
 Note: if you don't care for the Growl, make sure you remove `growl_notify` from the [Gemfile](https://github.com/searls/jasmine-headless-webkit-rails-skeleton/blob/master/Gemfile) to prevent exceptions.
 
 ##The play-by-play
 
-If you're looking to recreate a similar setup for your existing project, here are the steps I took.
+If you're looking to recreate a similar setup for your existing project, here are most of the steps I took.
 
 ###Dependencies
+
 Added to your [Gemfile](https://github.com/searls/jasmine-headless-webkit-rails-skeleton/blob/master/Gemfile):
 
     group :test, :development do
