@@ -6,6 +6,7 @@ Check this out if you want to:
 * use [CoffeeScript](http://jashkenas.github.com/coffee-script/)
 * leverage the [asset pipeline](http://railscasts.com/episodes/279-understanding-the-asset-pipeline) in Rails 3.1
 * run specs headless & quickly enough to remove browser-refreshing from your workflow
+* (optional) getting growl notifications via guard as your specs run
 
 ##Prerequisites
 
