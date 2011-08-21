@@ -1,4 +1,4 @@
-This is a skeleton app demonstrating [jasmine-headless-webkit](http://johnbintz.github.com/jasmine-headless-webkit/). Be sure to check that page for detailed instructions.
+This is a skeleton app demonstrating [jasmine-headless-webkit](http://github.com/johnbintz/jasmine-headless-webkit/). Be sure to check out [its page](https://johnbintz.github.com/jasmine-headless-webkit/) for detailed instructions.
 
 Check this out if you want to:
 
@@ -6,7 +6,6 @@ Check this out if you want to:
 * use CoffeeScript
 * leverage the assets pipeline in Rails 3.1
 * run specs headless & quickly enough to remove browser-refreshing from your workflow
-
 
 ##Prerequisites
 
@@ -91,5 +90,9 @@ And changed these lines in my [Guardfile](https://github.com/searls/jasmine-head
       ...
     end
 
-  
+## Notes
+
+Many thanks to [John Bintz](http://twitter.com/johnbintz) for making jasmine-headless-webkit, it's a wonderful tool.
+
+
   
