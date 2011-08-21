@@ -29,6 +29,7 @@ If you run guard, it first run your specs and then monitor any changes to your a
 
     bundle exec guard
 
+Note: if you don't care for the Growl, make sure you remove `growl_notify` from the [Gemfile](https://github.com/searls/jasmine-headless-webkit-rails-skeleton/blob/master/Gemfile) to prevent exceptions.
 
 ##The play-by-play
 
