@@ -2,27 +2,25 @@ This is a skeleton app demonstrating [jasmine-headless-webkit](http://github.com
 
 Check this out if you want to:
 
-* write Jasmine specs
-* use CoffeeScript
-* leverage the assets pipeline in Rails 3.1
+* write [Jasmine](https://github.com/pivotal/jasmine/wiki) specs
+* use [CoffeeScript](http://jashkenas.github.com/coffee-script/)
+* leverage the [asset pipeline](http://railscasts.com/episodes/279-understanding-the-asset-pipeline) in Rails 3.1
 * run specs headless & quickly enough to remove browser-refreshing from your workflow
 
 ##Prerequisites
 
-Stuff I did on my Mac OS X Lion (10.7) setup to get started. I already had XCode installed, which I'll bet is a requisite step.
+Running Mac OS X Lion (10.7) setup. I'm sure the details will differ slightly on other platforms.
 
-Install [XCode](http://itunes.apple.com/us/app/xcode/id448457090?mt=12)
+Install [XCode](http://itunes.apple.com/us/app/xcode/id448457090?mt=12) & [Growl](http://growl.info/index.php) for guard notifications.
 
 Install QT with [homebrew](https://github.com/mxcl/homebrew). (Full disclosure: upon running `brew update`, I needed to `git stash` in `/usr/local` then `git pull` to get the latest recipes.)
 
     brew update
     brew install qt
 
-Install [Growl](http://growl.info/index.php) for guard notifications.
-
 ##Try it out
 
-Once you've cloned this repository and changed into the directory, you can run the specs like so:
+Once you've cloned this repository and changed into the directory, you should be able to run the Jasmine specs like so:
 
     bundle install
     bundle exec jasmine-headless-webkit -c --keep
