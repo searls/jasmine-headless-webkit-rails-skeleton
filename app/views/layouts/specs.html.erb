@@ -5,13 +5,9 @@
 # see this thread on the jasmine group: http://groups.google.com/group/jasmine-js/browse_thread/thread/c9c30854ecfd915d
 require 'jasmine'
 
-config = Jasmine::Config.new
 jasmine_path = Jasmine::Core.path
-
 jasmine_files = Jasmine::Core.js_files.map {|f| "/#{jasmine_path}/#{f}"}
 css_files = Jasmine::Core.css_files.map {|f| "/#{jasmine_path}/#{f}"}
-js_files = config.js_files
-
 %>
 <!DOCTYPE html>
 <html>
@@ -35,13 +31,12 @@ js_files = config.js_files
     <!-- sources -->    
     <%= javascript_include_tag "application" %>
     
-    <% config.spec_files_full_paths.each do |path| %>
+    <% Jasmine::Config.new.spec_files_full_paths.each do |path| %>
       <script type="text/javascript" data-path="<%=path%>">
         <%= raw(path.end_with?('.coffee') ? CoffeeScript.compile(File.read(path)) : File.read(path)) %>
       </script>
     <% end %>
     
-
     <!-- executing runner -->
     <script type="text/javascript">
       var jsApiReporter;
