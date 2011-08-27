@@ -20,8 +20,7 @@ end
 gem 'jquery-rails'
 
 group :test, :development do
-  gem 'jasmine', '~> 1.1.0.rc'
-  gem 'jasmine-headless-webkit'
+  gem 'jasmine-rails'
   gem 'guard-rails-assets'
   gem 'guard-jasmine-headless-webkit'
   if RUBY_PLATFORM =~ /darwin/i

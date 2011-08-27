@@ -1,6 +1,6 @@
 JasmineDemo::Application.routes.draw do
-  get "specs/index"
-
+  mount JasmineRails::Engine => "/jasmine"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
