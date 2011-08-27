@@ -45,8 +45,7 @@ If you're looking to recreate a similar setup for your existing project, here ar
 Added to your [Gemfile](https://github.com/searls/jasmine-headless-webkit-rails-skeleton/blob/master/Gemfile):
 
     group :test, :development do
-      gem 'jasmine'
-      gem 'jasmine-headless-webkit'
+      gem 'jasmine-rails'
   
       if RUBY_PLATFORM =~ /darwin/i
         gem 'growl_notify'
