@@ -13,7 +13,7 @@
 src_files:
   - "vendor/**/*.{js,coffee}"
   - "lib/**/*.{js,coffee}"
-  - "public/**/*.{js,coffee}"
+  - "app/**/*.{js,coffee}"
 
 # stylesheets
 #
